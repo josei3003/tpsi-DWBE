@@ -10,7 +10,7 @@ if (nota_final >= 9.5) {
     console.log("Aprovado");
 }
 else
-    console.log("Reprovado");*/
+    console.log("Reprovado");
 
 function calculateGrade(p1, p2, freq) {
 
@@ -34,16 +34,16 @@ function calculateGrade(p1, p2, freq) {
 
 calculateGrade(12,19,18);
 calculateGrade(11,12,14);
-calculateGrade(9,10,7);
+calculateGrade(9,10,7);*/
 
-function mes(numeroMes){
-    switch(numeroMes){
+function mes(numeroMes) {
+    switch (numeroMes) {
         case 1:
             console.log("janeiro");
             break;
         case 2:
             console.log("fevereiro");
-            break;    
+            break;
         case 3:
             console.log("março");
             break;
@@ -64,7 +64,7 @@ function mes(numeroMes){
             break;
         case 9:
             console.log("setembro");
-            break;    
+            break;
         case 10:
             console.log("outubro");
             break;
@@ -78,4 +78,9 @@ function mes(numeroMes){
             console.log("Número de mês inválido");
     }
     return numeroMes;
+
 }
+
+mes(1);
+mes(4);
+mes(7);

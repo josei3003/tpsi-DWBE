@@ -34,7 +34,7 @@ function calculateGrade(p1, p2, freq) {
 
 calculateGrade(12,19,18);
 calculateGrade(11,12,14);
-calculateGrade(9,10,7);*/
+calculateGrade(9,10,7);
 
 function mes(numeroMes) {
     switch (numeroMes) {
@@ -84,3 +84,93 @@ function mes(numeroMes) {
 mes(1);
 mes(4);
 mes(7);
+
+function suma(x,y) {
+    var z = x + y;
+    return z;
+}
+console.log(suma(1+4));*/
+
+
+function calculate(val1, val2, op) {
+    if (op == "+")
+        return val1 + val2;
+    else if (op == "-")
+        return val1 - val2;
+    else if (op == "*")
+        return val1 * val2;
+    else if (op == "/")
+        return val1 / val2;
+    else
+        return "error";
+}
+
+console.log(calculate(2, 3, "/"));
+
+
+function imprimir() {
+    for (var i = 0; i < 20; i += 5) {
+        console.log(i)
+    }
+}
+imprimir(20)
+
+function suma_int(num) {
+    var res = 0;
+    for (var i = 0; i <= num; i++)
+        res += i;
+    return res;
+}
+
+console.log(suma_int(8))
+
+function factorial(num1) {
+    var res = 1;
+    for (var i = 1; i <= num1; i++)
+        res = res * i;
+    console.log(res);
+    return res;
+}
+
+factorial(5);
+
+
+
+
+var array = [5, 3, 5, 10];
+function min(array) {
+    index = 0
+    var m = array[0];
+    while (index < array.length) {
+        if (array[index] < m)
+            m = array[index];
+        index++
+    }
+    return m;
+
+
+}
+console.log(min(array));
+
+function max(array) {
+    var m = array[0];
+    for (let index = 1; index < array.length; index++) {
+        if (array[index] > m) {
+            m = array[index];
+        }
+    }
+    return m;
+}
+
+var array = [5, 3, 5, 10];
+console.log(max(array)); 
+
+var array = [5, 3, 5, 10];
+function med(array) {
+    var res = 0;
+    for (let index = 0; index < array.length; index++) {
+        res += array[index];
+    }
+    return res / array.length;
+}
+console.log(med(array));
